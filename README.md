@@ -91,3 +91,11 @@ src/
 * 作業ごとにブランチを作成する
 * 作業完了後は Pull Request を作成する
 * コミットメッセージは分かりやすく書く
+
+## ブランチは　自分の名前/実装した内容　で記載
+
+main
+├─ ikehara/login
+├─ ikehara/result-page
+├─ friend/header
+└─ friend/question-data
