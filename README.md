@@ -69,7 +69,7 @@ git commit -m "トップページを作成"
 ### GitHubへプッシュ
 
 ```bash
-git push origin feature/機能名
+git push
 ```
 
 ### Pull Request作成
