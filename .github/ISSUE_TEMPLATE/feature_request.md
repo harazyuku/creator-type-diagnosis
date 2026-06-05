@@ -6,9 +6,6 @@ labels: enhancement
 assignees: ''
 ---
 
-## 担当者
-担当者の名前
-
 ## 概要
 何を作るかを簡単に書く
 
