@@ -36,14 +36,28 @@ main ブランチから作業用ブランチを作成します。
 ```bash
 git switch main
 git pull origin main
-git switch -c feature/機能名
+git switch -c ikehara/login
 ```
 
 例:
 
 ```bash
-git switch -c feature/top-page
+git switch -c ikehara/login
 ```
+
+---
+
+## ブランチは　自分の名前/実装した内容　で記載
+
+```text
+main
+├─ ikehara/login
+├─ ikehara/result-page
+├─ toraga/header
+└─ toraga/question-data
+```
+
+---
 
 ### 作業内容をコミット
 
@@ -92,15 +106,3 @@ src/
 * 作業完了後は Pull Request を作成する
 * コミットメッセージは分かりやすく書く
   
----
-
-## ブランチは　自分の名前/実装した内容　で記載
-
-
-```text
-main
-├─ ikehara/login
-├─ ikehara/result-page
-├─ friend/header
-└─ friend/question-data
-```
