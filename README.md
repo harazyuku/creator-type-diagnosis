@@ -94,8 +94,12 @@ src/
 
 ## ブランチは　自分の名前/実装した内容　で記載
 
+---
+
+```text
 main
 ├─ ikehara/login
 ├─ ikehara/result-page
 ├─ friend/header
 └─ friend/question-data
+```
