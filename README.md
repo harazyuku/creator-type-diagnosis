@@ -1,16 +1,93 @@
-# React + Vite
+# Creator Type Diagnosis
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+クリエイタータイプ診断アプリです。
 
-Currently, two official plugins are available:
+## 環境構築
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 1. リポジトリをクローン
 
-## React Compiler
+```bash
+git clone <リポジトリURL>
+cd creator-type-diagnosis
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 2. パッケージをインストール
 
-## Expanding the ESLint configuration
+```bash
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 3. 開発サーバーを起動
+
+```bash
+npm run dev
+```
+
+ブラウザで表示されたURL（通常は http://localhost:5173 ）にアクセスしてください。
+
+---
+
+## 開発フロー
+
+### ブランチ作成
+
+main ブランチから作業用ブランチを作成します。
+
+```bash
+git switch main
+git pull origin main
+git switch -c feature/機能名
+```
+
+例:
+
+```bash
+git switch -c feature/top-page
+```
+
+### 作業内容をコミット
+
+```bash
+git add .
+git commit -m "トップページを作成"
+```
+
+### GitHubへプッシュ
+
+```bash
+git push origin feature/機能名
+```
+
+### Pull Request作成
+
+GitHub上で Pull Request を作成し、レビュー依頼を行ってください。
+
+---
+
+## 使用技術
+
+* React
+* Vite
+* JavaScript
+* Git / GitHub
+
+---
+
+## ディレクトリ構成
+
+```text
+src/
+├── components/
+├── pages/
+├── assets/
+└── App.jsx
+```
+
+---
+
+## 開発ルール
+
+* main ブランチへ直接コミットしない
+* 作業ごとにブランチを作成する
+* 作業完了後は Pull Request を作成する
+* コミットメッセージは分かりやすく書く
